@@ -487,22 +487,22 @@
 ##s1 = Solution.romanToInt("MDLVXIII")
 ##print(s1)
 
-n, m = map(int, input().split())
+# n, m = map(int, input().split())
 
-List_A = []
-for i in range(n):
-    List_A.append(input().split())
+# List_A = []
+# for i in range(n):
+#     List_A.append(input().split())
 
-List_B = []
-for i in range(m):
-    List_B.append(input().split())
+# List_B = []
+# for i in range(m):
+#     List_B.append(input().split())
 
-for word in List_B:
-    indices = [i +1 for i, w in enumerate(List_A) if w == word]
-    if indices:
-        print(' '.join(map(str, indices)))
-    else:
-        print(-1)
+# for word in List_B:
+#     indices = [i +1 for i, w in enumerate(List_A) if w == word]
+#     if indices:
+#         print(' '.join(map(str, indices)))
+#     else:
+#         print(-1)
 
 
 
