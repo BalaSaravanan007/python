@@ -106,7 +106,7 @@ for i in range(m):
 a = []
 for i in List_B:
     if i in List_A:
-        a.append(List_A.index(i+1))
+        a.append(List_A.index(i))
 print(a)
 
 
