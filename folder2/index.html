@@ -3,9 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>User Login</title>
+    <style>
+      .header {
+        padding: 20px;
+        background-color: aquamarine;
+        border-bottom: 8px solid white;
+      }
+      form {
+        text-align: center;
+        font-size: 50px;
+      }
+      input {
+        height: 40px;
+        width: 400px;
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .clearfix {
+        overflow: auto;
+      }
+      .box {
+        background-color: grey;
+        border: 2px solid white;
+        float: left;
+        padding: 25px;
+        width: 33.33%;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: gray;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        padding: 24px 26px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: black;
+      }
+      .active {
+        background-color: tomato;
+      }
+    </style>
   </head>
   <body>
-    <script src="\learn.js"></script>
+    <div class="header">
+      <h1 style="text-align: center; font-size: 80px">The Webpage</h1>
+    </div>
+    <ul>
+      <li><a href="#home" class="active">Log-In</a></li>
+      <li><a href="#signup">Sign-Up</a></li>
+      <li><a href="#signin">Sign-In</a></li>
+    </ul>
+    <h1 style="text-align: center; font-size: 100px">User Login</h1>
+    <form action="home.html">
+      <fieldset>
+        <legend>User Info</legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Email or Phone</label>
+        <input type="text" id="email" name="email" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+      <div class="clearfix">
+        <p class="box">Home</p>
+        <p class="box">Sign-In</p>
+        <p class="box">Sign-Up</p>
+      </div>
+    </form>
   </body>
 </html>
