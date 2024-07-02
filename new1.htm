@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<meta charset="UTF-8">
+    <head>
+        <title>My first HTML</title>
+        <link rel="icon" type="image/x-icon" href="favicon1.jpg">
+        <!--internal css-->
+        <style>
+            h1 {padding: 30px;}
+            p {margin: 50px;}
+            a:link, a:visited {
+                color: white;
+                background-color: tomato;
+                padding: 15px 25px;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+                background-color: red;
+                padding: 15px 25px;
+            }
+            body {
+                background-image: url('army view.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            table, th, td {
+                border: 1px solid black;
+                
+                border-style: inset;                
+            }
+            tr:nth-child(odd) {
+                background-color: burlywood;
+            }
+            tr:nth-child(even) {
+                background-color: beige;
+            }
+            td:hover {
+                background-color: orange;
+            }
+            ul {
+                list-style-type: none;
+                background-color: tomato;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            <!--to display a list horizontally-->
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: red;
+            }
+            ol {
+                background-color: bisque;
+                color: white;
+            }
+            h4 {
+                background-color: brown;
+                text-align: center;
+                padding: 15px 25px;
+                height: 40px;
+                width: 200px;
+            }
+            dl {
+                background-color: aquamarine;
+            }
+            .my-container {
+                display: flex;
+            }
+            .my-container > div {
+                width: 33.3%;
+            }
+            .container {
+                margin: auto;
+            }
+            form {
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">INDIAN ARMY</h1>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#table">Candidates</a></li>
+            <li><a href="#Description">Description</a></li>
+        </ul>
+        <p style="font-family: 'Courier New', Courier, monospace;" id="Home">In our country, India there is several kinds of armys like The Army(on the ground) The Navy, and The Air Force</p>
+        <a href="https://www.w3schools.com" target="_blank" title="click to go to W3Schools">visit W3Schools</a>
+        <button onclick="document.location='https://www.w3schools.com'">click here to go to W3Schools</button>
+        <hr>
+        <img src="ind.png" alt="can't post the pic!" style="height: 100; width: 200; float: right;">
+        <pre style="color:red;">
+            Salute to the heroes who gaurded
+            the contry while we sleep. They Protected our land
+            from the enemies till their death. 
+            Wholehearted tHankyou for the Great Heroes...</pre>
+        <p title="This a Paragraph">curser here!</p>
+        <hr>
+        <h2 style="font-size: 20px; background-color: antiquewhite; text-align: center;">Detailed view of the candidates</h2>
+        <table style="width: 100%;" id="table">
+            <caption style="background-color: beige;"><b>Candidates Records</b></caption>
+            <colgroup>
+                <col span="2">
+                <col span="2" style="background-color: aqua;">
+            </colgroup>
+            <tr>
+                <th style="width: 50%;">Name</th>
+                <th>Age</th>
+                <th colspan="2">Department</th>
+            </tr>
+            <tr style="height: 200%;">
+                <td>Bala Saravanan</td>
+                <td>17</td>
+                <td>Air Force</td>
+                <td>Pilot</td>
+            </tr>
+            <tr>
+                <td>Aryaa</td>
+                <td>18</td>
+                <td>Army</td>
+                <td>General</td>
+            </tr>
+            <tr>
+                <td>Dinesh Kumar</td>
+                <td>18</td>
+                <td>Navy</td>
+                <td>Captain</td>
+            </tr>
+        </table>
+        <h3 style="background-color: rgb(224, 120, 64); text-align: center;">this is a heading with bc</h3>
+        <p style="border: 2px solid tomato;">this is para with border</p>
+        <!--comments-->
+        <!--lets see some font based tags-->
+        <p><b>this text is bold.</b></p>
+        <p><i>this text is italised.</i></p>
+        <p><mark>this test is highlighted.</mark></p>
+        <!--html lists-->
+        <div class="my-container">
+            <div>
+                <h4>An Unordered list of Armys</h4>
+                <ul style="list-style-type: disc;">
+                    <li>Army</li>
+                    <li>Navy</li>
+                    <li>Air Force</li>
+                </ul>
+                <h4>An Ordered list of Candidates</h4>
+                <ol>
+                    <li>Aryaa</li>
+                    <li>Dinesh Kumar</li>
+                    <li>Bala Saravanan</li>
+                </ol>
+                <h4>Description Lists</h4>
+                <dl id="Description">
+                    <dt>Aryaa</dt>
+                    <dd>-General, Army</dd>
+                    <dt>Dinesh Kumar</dt>
+                    <dd>-Captain, Navy</dd>
+                    <dt>Bala Saravanan</dt>
+                    <dd>-Pilot, Air Force</dd>
+                </dl>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+                <form>
+                    <label for="candi_name">Name</label>
+                    <input type="text" id="candi_name">
+                    <input type="radio" id="army_kind">
+                    <label for="army_kind" value="Army">Army</label>
+                    <input type="radio" id="army_kind">
+                    <label for="army_kind" value="Navy">Navy</label>
+                    <input type="radio" id="army_kind">
+                    <label for="army_kind" value="Air Force">Air Force</label>
+                </form>
+            </p>
+        </div>
+    </body>
+</html>
