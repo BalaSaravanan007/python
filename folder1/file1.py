@@ -93,22 +93,42 @@
 #             my_list.reverse()
 # print(my_list)
 
-n, m = map(int, input().split())
+# n, m = map(int, input().split())
 
-List_A = []
-for i in range(n):
-    List_A.extend(input().split())
+# List_A = []
+# for i in range(n):
+#     List_A.extend(input().split())
 
-List_B = []
-for i in range(m):
-    List_B.extend(input().split())
+# List_B = []
+# for i in range(m):
+#     List_B.extend(input().split())
 
-a = []
-for i in List_B:
-    if i in List_A:
-        a.append(List_A.index(i))
-print(a)
+# a = []
+# for i in List_B:
+#     if i in List_A:
+#         a.append(List_A.index(i))
+# print(a)
 
 
+# T = int(input())
+# for i in range(T):
 
-    
+#     try:
+#         a, b = map(int, input().split())
+#         print(a/b)
+#     except ZeroDivisionError as e:
+#         print("Error Code:", e)
+#     except ValueError as a:
+#         print("Error Code:", a)
+
+import re
+
+T = int(input())
+for i in range(T):
+    try:
+        S = (input())
+        re.compile(S)
+        print(True)
+    except re.error:
+        print(False)
+        
