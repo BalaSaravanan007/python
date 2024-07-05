@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../../my-files"
+		},
+		{
+			"name": "python",
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}
