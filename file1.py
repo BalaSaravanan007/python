@@ -133,18 +133,61 @@
 #         print(False)
         
 
-from collections import namedtuple
+# from collections import namedtuple
 
-N = int(input())
-headers = input().split()
-Student = namedtuple('Student', headers)
+# N = int(input())
+# headers = input().split()
+# Student = namedtuple('Student', headers)
 
-total_marks = 0
+# total_marks = 0
 
-for i in range(N):
-    data = input().split()
-    student = Student(*data)
-    total_marks += int(student.MARKS)
+# for i in range(N):
+#     data = input().split()
+#     student = Student(*data)
+#     total_marks += int(student.MARKS)
 
-Average = total_marks/N
-print(Average)
+# Average = total_marks/N
+# print(Average)
+
+# from collections import deque
+
+# d = deque()
+
+# N = int(input())
+# for i in range(N):
+#     in_put = input().split()
+
+#     if len(in_put) == 2:
+#         if in_put[0] == "append":
+#             d.append(int(in_put[1]))
+
+#         elif in_put[0] == "appendleft":
+#             d.appendleft(int(in_put[1]))
+
+#     elif in_put[0] == "pop":
+#         d.pop()
+
+#     elif in_put[0] == "popleft":
+#         d.popleft()
+
+# for i in range(len(d)):
+#     print(d[i], end=" ")
+
+# from collections import deque
+
+# d = deque()
+# for i in range(int(input())):
+#     in_put = input().split()
+#     getattr(d, in_put[0])(*[in_put[1]] if len(in_put) > 1 else [])
+# print(*d)
+
+# A = int(input())
+# A = set(map(int, input().split()))
+# N = int(input())
+
+# for i in range(N):
+#     in_puts = input().split()
+#     inp = list(map(int, input().split()))
+#     getattr(A, in_puts[0])(inp)
+    
+# print(sum(A))
